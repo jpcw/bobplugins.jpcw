@@ -13,9 +13,21 @@ If_Statement
 
 Add an **+__if_any.var__+** statement pattern to influence rendering. 
 
-For example foo/**+__if_render.me__+**+author+/+age+.bob given variables author being Foo and age being 12, foo/Foo/12 will be rendered if **render.me** is True.
+For example foo/**+__if_render.me__+**\+author+/+age+.bob  given variables :
 
-Else only foo/ will be rendered. Please notice that only ('y', 'yes', 'true', 'True', 1) are True, anything else will be considred as False.
+ + author =  Foo 
+ + age = 12 
+
+
+if **render.me** is True:
+
+    foo/Foo/12 will be rendered 
+
+else:
+
+    foo/ will be rendered. 
+    
+Please notice that only **('y', 'yes', 'true', True, 1)** are True, anything else will be considred as False.
 
 
 
