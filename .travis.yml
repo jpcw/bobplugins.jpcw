@@ -10,7 +10,7 @@ install:
   - git clone -b entry_points https://github.com/jpcw/mr.bob.git
   - cd mr.bob
   - python setup.py install
-  - cd ../../bobplugins.jpcw
+  - cd ../bobplugins.jpcw/
   - python setup.py develop
   - easy_install bobplugins.jpcw[test]
 script:
