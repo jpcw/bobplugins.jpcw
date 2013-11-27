@@ -3,7 +3,21 @@
 Introduction
 ============
 
-Flexible redering plugins for mrbob
+Flexibles rendering plugins for mrbob
+
+Plugins
+========
+
+If_Statement
+--------------
+
+Add an **+__if_any.var__+** statement to influence rendering. 
+
+For example foo/+if_render.me++author+/+age+.bob given variables author being Foo and age being 12, foo/Foo/12 will be rendered if **render.me** is True.
+
+Else only foo/ will be rendered. Please notice that only ('y', 'yes', 'true', 'True', 1) are True, anything else will be considred as False.
+
+
 
 Tests
 =====
