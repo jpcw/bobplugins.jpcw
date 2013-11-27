@@ -11,7 +11,7 @@ Plugins
 If_Statement
 --------------
 
-Add an **+__if_any.var__+** statement to influence rendering. 
+Add an **+__if_any.var__+** statement pattern to influence rendering. 
 
 For example foo/**+__if_render.me__+**+author+/+age+.bob given variables author being Foo and age being 12, foo/Foo/12 will be rendered if **render.me** is True.
 
