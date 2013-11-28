@@ -13,6 +13,8 @@ class render_structureTest(unittest.TestCase):
 
     def setUp(self):
         import bobplugins.jpcw
+        import mrbob.plugins
+        mrbob.plugins.PLUGINS['render_filename'] = mrbob.plugins.load_plugin('render_filename')
         self.fs_tempdir = mkdtemp()
         self.fs_templates = os.path.abspath(
             os.path.join(os.path.dirname(bobplugins.jpcw.__file__),
@@ -163,6 +165,8 @@ class render_structureTest(unittest.TestCase):
 class render_templateTest(unittest.TestCase):
     def setUp(self):
         import bobplugins.jpcw
+        import mrbob.plugins
+        mrbob.plugins.load_plugin('render_filename')
         self.fs_tempdir = mkdtemp()
         self.fs_templates = os.path.abspath(
             os.path.join(os.path.dirname(bobplugins.jpcw.__file__),
