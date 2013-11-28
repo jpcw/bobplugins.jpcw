@@ -7,7 +7,7 @@ python:
   - pypy
 install:
   - cd ../
-  - git clone -b entry_points https://github.com/jpcw/mr.bob.git
+  - git clone -b plugguable_render_filename https://github.com/jpcw/mr.bob.git
   - cd mr.bob
   - python setup.py install
   - cd ../bobplugins.jpcw/
