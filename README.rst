@@ -3,7 +3,7 @@
 Introduction
 ============
 
-Flexibles rendering plugins for mrbob
+Flexibles rendering plugins for `mrbob <https://github.com/iElectric/mr.bob>`_
 
 Plugins
 ========
